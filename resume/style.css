@@ -1,0 +1,363 @@
+:root {
+  --primary-blue: #0b4f8a;
+  --secondary-blue: #083c68;
+  --light-gray: #f4f6f8;
+  --border-color: #333333;
+  --text-dark: #222222;
+  --text-light: #ffffff;
+}
+/* Profile Section Styling */
+.profile-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+.profile-highlights {
+  margin-top: 8px;
+  padding-left: 18px;
+  font-size: 13px;
+}
+.profile-highlights li {
+  margin-bottom: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #eef2f5;
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.resume-container {
+  display: flex;
+  width: 1000px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}/* Technical Qualification Section */
+.qualification-card {
+  background-color: var(--light-gray);
+  border-left: 4px solid var(--primary-blue);
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.qualification-title {
+  font-size: 14px;
+  color: var(--primary-blue);
+  margin-bottom: 4px;
+}
+
+.qualification-details {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.qualification-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.highlight-score {
+  color: var(--secondary-blue);
+}
+/* Stack multiple qualification cards cleanly */
+.qualification-card + .qualification-card {
+  margin-top: 10px;
+}
+
+.header h1 {
+  font-size: 26px;
+  color: var(--primary-blue);
+  letter-spacing: 1px;
+}
+
+.header .subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 15px;
+  color: var(--primary-blue);
+  border-bottom: 2px solid var(--primary-blue);
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+/* Technical Skills Section */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.skill-category {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.skill-label {
+  font-weight: bold;
+  color: var(--primary-blue);
+  display: inline-block;
+  min-width: 170px;
+}
+/* Technical Training Section */
+.training-card {
+  background-color: var(--light-gray);
+  border-left: 4px solid var(--primary-blue);
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.training-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--primary-blue);
+  margin-bottom: 4px;
+}
+
+.training-duration {
+  font-size: 12px;
+  color: #555;
+  font-weight: 600;
+}
+
+.training-org {
+  font-size: 12.5px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.training-points {
+  padding-left: 18px;
+  font-size: 12.5px;
+}
+
+.training-points li {
+  margin-bottom: 3px;
+  color: #222;
+}
+
+p, li {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+/* Tables Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 6px 8px;
+  text-align: center;
+}
+
+th {
+  background-color: var(--light-gray);
+  font-weight: bold;
+}
+
+/* Personal Info List */
+.personal-info {
+  list-style: none;
+  padding-left: 0;
+}
+
+.personal-info li {
+  margin-bottom: 4px;
+}
+
+.personal-info span {
+  font-weight: bold;
+  display: inline-block;
+  width: 130px;
+}
+
+/* Signature Block */
+.signature-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+.sig-line {
+  border-top: 1px solid #000;
+  padding-top: 4px;
+  width: 120px;
+  text-align: center;
+}
+
+/* Right Sidebar */
+.sidebar {
+  width: 320px;
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  padding: 25px 20px;
+}
+
+.profile-pic-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--text-light);
+  background-color: #ddd;
+}
+
+.sidebar-group {
+  margin-bottom: 20px;
+}
+
+.sidebar-title {
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar p, .sidebar li {
+  color: #f0f0f0;
+  font-size: 12.5px;
+}
+
+.sidebar ul {
+  padding-left: 16px;
+}
+
+.sidebar strong {
+  color: #ffffff;
+}
+/* Sidebar Specific Styling */
+.sidebar-list {
+  padding-left: 16px;
+  margin-top: 4px;
+}
+
+.sidebar-list li {
+  margin-bottom: 5px;
+  font-size: 12.5px;
+  color: #f0f0f0;
+}
+
+.sidebar p {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+/* Print Optimization */
+@media print {
+  body {
+    background-color: #ffffff;
+    padding: 0;
+  }
+  } 
+  .resume-container {
+    box-shadow: none;
+    width: 100%;
+  }
+  /* Force ALL links inside sidebar to display in white color */
+.sidebar a,
+.sidebar a:link,
+.sidebar a:visited,
+.sidebar a:hover,
+.sidebar a:active,
+.sidebar .sidebar-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  word-break: break-all !important;
+}
+
+/* Optional: Subtle underline when hovering over the link */
+.sidebar a:hover {
+  text-decoration: underline !important;
+}
+
+/* Force white color during PDF printing */
+@media print {
+  .sidebar a,
+  .sidebar a:link,
+  .sidebar a:visited {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+}
+/* Projects Section Styling */
+.project-card {
+  background-color: var(--light-gray);
+  border-left: 4px solid var(--primary-blue);
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--primary-blue);
+  margin-bottom: 6px;
+}
+.project-tech {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--secondary-blue);
+  background-color: #e0f2fe;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.project-points {
+  padding-left: 18px;
+  font-size: 12.5px;
+}
+
+.project-points li {
+  margin-bottom: 3px;
+  color: var(--text-dark);
+}
