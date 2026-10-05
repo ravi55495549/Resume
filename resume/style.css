@@ -306,8 +306,8 @@ th {
 .sidebar a:hover,
 .sidebar a:active,
 .sidebar .sidebar-link {
+  text-decoration: none;
   color: #ffffff !important;
-  text-decoration: none !important;
   font-weight: normal !important;
   word-break: break-all !important;
 }
@@ -315,6 +315,18 @@ th {
 /* Optional: Subtle underline when hovering over the link */
 .sidebar a:hover {
   text-decoration: underline !important;
+}
+/* Underline specific links with clean styling */
+.contact-section a {
+  text-decoration: none;
+  text-underline-offset: 3px; /* Adds breathing room between text and line */
+  text-decoration-thickness: 1px;
+  color: inherit; /* Preserves your existing link color */
+}
+
+/* Optional hover polish */
+.contact-section a:hover {
+  text-decoration-color: #ffffff; /* Brightens the line on hover */
 }
 
 /* Force white color during PDF printing */
